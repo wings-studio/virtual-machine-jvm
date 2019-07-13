@@ -3,8 +3,11 @@ class Stack {
     var functions: Map<String, wolFunction> = emptyMap()
     var variables: Map<String, wolValue> = emptyMap()
 
-    fun parse(code: String)
-    {
-        //pass
+    companion object Parser {
+        @JvmStatic
+        fun parse(code: String)
+        {
+            //pass
+        }
     }
 }
