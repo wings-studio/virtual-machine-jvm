@@ -10,13 +10,13 @@ fun main(args: Array<String>)
 {
     if (args.isEmpty())
     {
-        print("World of Legends Virtual Machine v$version\nAuthor: snaulX, mnolimp\nCopyright (c) 2019")
+        print("World of Legends Virtual Machine v$version\nAuthor: snaulX\nCopyright (c) 2019")
     }
     else
     {
         when (args[0]) {
             "-info" -> {
-                print("World of Legends Virtual Machine v$version\nAuthor: snaulX, mnolimp\nCopyright (c) 2019")
+                print("World of Legends Virtual Machine v$version\nAuthor: snaulX\nCopyright (c) 2019")
             }
             "-run" -> {
                 //pass
