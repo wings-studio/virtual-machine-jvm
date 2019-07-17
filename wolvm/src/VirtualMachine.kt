@@ -77,7 +77,15 @@ fun main(args: Array<String>)
                             current = input[++position]
                             if (current == '{')
                             {
-                                //valid
+                                while (current != '}') {
+                                    try {
+                                        buffer.append(current)
+                                        current = input[++position]
+                                    } catch (ex: java.lang.IndexOutOfBoundsException) {
+                                        throwVMException("End of script not found", position, ExceptionType.BLDSyntaxException)
+                                    }
+                                }
+                                parse(buffer.toString())
                             }
                             else
                             {
