@@ -1,5 +1,5 @@
 import java.io.FileReader
-import java.lang.StringBuilder
+import java.lang.*
 
 const val version: String = "1.0.0.0"
 val wolVoid: wolClass = wolClass()
@@ -81,7 +81,7 @@ fun main(args: Array<String>)
                                     try {
                                         buffer.append(current)
                                         current = input[++position]
-                                    } catch (ex: java.lang.IndexOutOfBoundsException) {
+                                    } catch (ex: IndexOutOfBoundsException) {
                                         throwVMException("End of script not found", position, ExceptionType.BLDSyntaxException)
                                     }
                                 }
@@ -101,7 +101,7 @@ fun main(args: Array<String>)
                                         try {
                                             buffer.append(current)
                                             current = input[++position]
-                                        } catch (ex: java.lang.IndexOutOfBoundsException) {
+                                        } catch (ex: IndexOutOfBoundsException) {
                                             throwVMException("End of stack not found", position, ExceptionType.BLDSyntaxException)
                                         }
                                     }
