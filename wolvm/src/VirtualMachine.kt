@@ -3,6 +3,7 @@ import java.lang.*
 
 const val version: String = "1.0.0.0"
 val wolVoid: wolClass = wolClass()
+var mainstack: Stack? = Stack()
 
 fun throwVMException(message: String, position: Int, type: ExceptionType) = println("$type. In position $position. $message")
 
