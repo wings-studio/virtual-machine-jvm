@@ -1,9 +1,11 @@
+package wolvm
+
 import java.io.FileReader
 import java.lang.*
 
 const val version: String = "1.0.0.0"
 val wolVoid: wolClass = wolClass()
-var mainstack: Stack? = Stack()
+public var mainstack: Stack? = Stack()
 
 fun throwVMException(message: String, position: Int, type: ExceptionType) = println("$type. In position $position. $message")
 
@@ -33,7 +35,7 @@ fun main(args: Array<String>)
                 var reader: FileReader = FileReader(args[0])
                 val input: String = reader.readText()
 
-                //main cycle
+                //wolvm.main cycle
                 var position: Int = 0
                 var current: Char = input[position]
                 while (position < input.length)
@@ -74,7 +76,7 @@ fun main(args: Array<String>)
                                 throwVMException("Start of _loads block not found", position, ExceptionType.BLDSyntaxException)
                             }
                         }
-                        "main" -> {
+                        "wolvm.main" -> {
                             current = input[++position]
                             if (current == '{')
                             {

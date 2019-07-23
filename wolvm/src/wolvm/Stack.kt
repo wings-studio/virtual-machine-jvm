@@ -1,3 +1,5 @@
+package wolvm
+
 import java.lang.*
 
 class Stack {

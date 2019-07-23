@@ -1,3 +1,5 @@
+package wolvm
+
 enum class ClassType {
     DEFAULT,
     STRUCT,
