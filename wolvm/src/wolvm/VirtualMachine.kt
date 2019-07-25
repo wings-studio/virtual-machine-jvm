@@ -1,11 +1,11 @@
 package wolvm
 
-import java.io.FileReader
+import java.io.*
 import java.lang.*
 
 const val version: String = "1.0.0.0"
 val wolVoid: wolClass = wolClass()
-public var mainstack: Stack? = Stack()
+var mainstack: Stack? = Stack()
 
 fun throwVMException(message: String, position: Int, type: ExceptionType) = println("$type. In position $position. $message")
 
@@ -32,7 +32,15 @@ fun main(args: Array<String>)
                 println("<full file name> ; run build-file")
             }
             else -> {
-                var reader: FileReader = FileReader(args[0])
+                lateinit var reader: FileReader
+                try
+                {
+                    reader = FileReader(args[0])
+                }
+                catch (e: FileNotFoundException)
+                {
+                    throwVMException("File by full name ${args[0]} not found", 0, ExceptionType.FileNotFoundException)
+                }
                 val input: String = reader.readText()
 
                 //wolvm.main cycle
