@@ -84,7 +84,7 @@ fun main(args: Array<String>)
                                 throwVMException("Start of _loads block not found", position, ExceptionType.BLDSyntaxException)
                             }
                         }
-                        "wolvm.main" -> {
+                        "main" -> {
                             current = input[++position]
                             if (current == '{')
                             {
