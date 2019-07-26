@@ -1,6 +1,6 @@
 package wolvm
 
-class wolValue {
+class wolValue (type: wolClass) {
     var security: SecurityModifer = SecurityModifer.PRIATE
-    lateinit var type: wolClass
+    var type: wolClass = type
 }

@@ -3,9 +3,9 @@ package wolvm
 import java.lang.*
 
 class Stack {
-    var classes: Map<String, wolClass> = emptyMap()
-    var functions: Map<String, wolFunction> = emptyMap()
-    var variables: Map<String, wolValue> = emptyMap()
+    var classes: MutableMap<String, wolClass> = mutableMapOf()
+    var functions: MutableMap<String, wolFunction> = mutableMapOf()
+    var variables: MutableMap<String, wolValue> = mutableMapOf()
 
     companion object Parser {
         @JvmStatic
@@ -34,6 +34,22 @@ class Stack {
                 throwVMException("Open bracket is not valid $current", position, ExceptionType.BLDSyntaxException)
             }
             return stack
+        }
+    }
+
+    fun Add(stack: Stack)
+    {
+        for (wolclass in stack.classes)
+        {
+            classes[wolclass.key] = wolclass.value
+        }
+        for (function in stack.functions)
+        {
+            functions[function.key] = function.value
+        }
+        for (variable in stack.variables)
+        {
+            variables[variable.key] = variable.value
         }
     }
 }

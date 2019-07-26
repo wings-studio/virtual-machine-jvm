@@ -2,11 +2,12 @@ package utils
 import wolvm.*
 
 abstract class VMLibrary {
-    var classes = emptyList<wolClass>()
-    var expressions = emptyList<VMExpression>()
+    var stack = Stack()
+    var expressions = mutableListOf<VMExpression>()
 
     fun Load()
     {
-        //pass
+        mainstack = stack
+
     }
 }
