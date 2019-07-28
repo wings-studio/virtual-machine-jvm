@@ -3,11 +3,11 @@ import wolvm.*
 
 abstract class VMLibrary {
     var stack = Stack()
-    var vmexpressions = mutableListOf<VMExpression>()
+    var vmexpressions = mutableMapOf<String, VMExpression>()
 
     fun Load()
     {
         mainstack.Add(stack)
-        expressions.addAll(vmexpressions)
+        expressions.putAll(vmexpressions)
     }
 }
