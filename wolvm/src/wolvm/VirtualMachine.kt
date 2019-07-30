@@ -1,6 +1,6 @@
 package wolvm
 
-import utils.VMExpression
+import utils.*
 import java.io.*
 import java.lang.*
 
@@ -45,7 +45,7 @@ fun main(args: Array<String>)
                 }
                 val input: String = reader.readText()
 
-                //wolvm.main cycle
+                //main cycle
                 var position: Int = 0
                 var current: Char = input[position]
                 while (position < input.length)

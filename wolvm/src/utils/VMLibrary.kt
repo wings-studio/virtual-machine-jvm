@@ -7,7 +7,7 @@ abstract class VMLibrary {
 
     fun Load()
     {
-        mainstack.Add(stack)
+        mainstack.add(stack)
         expressions.putAll(vmexpressions)
     }
 }

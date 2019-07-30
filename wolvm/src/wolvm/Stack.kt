@@ -37,7 +37,7 @@ class Stack {
         }
     }
 
-    fun Add(stack: Stack)
+    fun add(stack: Stack)
     {
         for (wolclass in stack.classes)
         {

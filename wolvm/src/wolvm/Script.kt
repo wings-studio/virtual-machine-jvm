@@ -7,7 +7,7 @@ fun parse(code: String)
     {
         var position = 0
         var current = expr[0]
-        while (current.isJavaIdentifierPart())
+        while (!current.isWhitespace())
         {
             try
             {
