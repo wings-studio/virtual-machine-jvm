@@ -4,7 +4,7 @@ import utils.*
 import java.io.*
 import java.lang.*
 
-const val version: String = "1.0.0.0"
+const val version: String = "0.9.0.0"
 var mainstack: Stack = Stack()
 var expressions: MutableMap<String, VMExpression> = mutableMapOf()
 

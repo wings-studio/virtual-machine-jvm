@@ -8,6 +8,10 @@ class Stack {
     var variables: MutableMap<String, wolValue> = mutableMapOf()
 
     companion object Parser {
+        /**
+         * Parse stack code with open bracket '{'
+         * @param code Code of stack
+         */
         @JvmStatic
         fun parse(code: String): Stack
         {
