@@ -2,7 +2,5 @@ package classes
 import wolvm.*
 
 class wolVoid : wolClass("void") {
-    override var type: ClassType
-        get() = ClassType.STRUCT
-        set(value) { value }
+    override var type: ClassType = ClassType.STRUCT
 }
