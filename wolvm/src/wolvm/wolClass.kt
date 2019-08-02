@@ -2,8 +2,9 @@ package wolvm
 
 open class wolClass (strtype: String, sec: SecurityModifer = SecurityModifer.PUBLIC) {
     open var type: ClassType = ClassType.DEFAULT
-    var security: SecurityModifer = sec
-    var methods: MutableMap<String, wolFunction> = mutableMapOf()
-    var fields: MutableMap<String, wolValue> = mutableMapOf()
-    var strtype: String = strtype
+    open var security: SecurityModifer = sec
+    open var methods: MutableMap<String, wolFunction> = mutableMapOf()
+    open var fields: MutableMap<String, wolValue> = mutableMapOf()
+    open var strtype: String = strtype
+    open var constants: MutableMap<String, wolValue> = mutableMapOf()
 }
