@@ -1,6 +1,6 @@
 package wolvm
 
 enum class SecurityModifer {
-    PRIATE,
+    PRIVATE,
     PUBLIC
 }
