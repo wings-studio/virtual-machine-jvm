@@ -1,5 +1,6 @@
 package wolvm
 
+import classes.*
 import utils.*
 import java.io.*
 import java.lang.*
@@ -33,6 +34,16 @@ fun main(args: Array<String>)
                 println("<full file name> ; run build-file")
             }
             else -> {
+                //create context of thread
+                mainstack.classes.put("void", wolVoid())
+                mainstack.classes.put("bool", wolBool())
+                mainstack.classes.put("byte", wolByte())
+                mainstack.classes.put("short", wolShort())
+                mainstack.classes.put("int", wolInt())
+                mainstack.classes.put("float", wolFloat())
+                mainstack.classes.put("long", wolLong())
+                mainstack.classes.put("double", wolDouble())
+
                 lateinit var reader: FileReader
                 try
                 {
