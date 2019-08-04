@@ -24,22 +24,24 @@ fun main(args: Array<String>)
             "-info" -> {
                 print("World of Legends Virtual Machine v$version\nAuthor: snaulX\nCopyright (c) 2019")
             }
-            /*"-encode" -> {
+            "-encode" -> {
                 lateinit var bytes: ByteArray
                 try
                 {
                     bytes = File(args[1]).readBytes()
                 }
-                catch (FileNotFoundException)
+                catch (e: FileNotFoundException)
                 {
-
+                    throwVMException("File by name ${args[1]} not found", 0, ExceptionType.FileNotFoundException)
                 }
-            }*/
+                var reader = ByteArrayInputStream(bytes)
+            }
             "-help" -> {
                 println("World of Legends Virtual Machine Helper")
                 println()
                 println("Arguments:")
                 println("-info ; print info about virtual machine")
+                println("-encode <full file name> ; encode and run build-file")
                 println("<full file name> ; run build-file")
             }
             else -> {
