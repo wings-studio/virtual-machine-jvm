@@ -5,6 +5,6 @@ open class wolClass (strtype: String, sec: SecurityModifer = SecurityModifer.PUB
     open var security: SecurityModifer = sec
     open var methods: MutableMap<String, wolFunction> = mutableMapOf()
     open var fields: MutableMap<String, wolValue> = mutableMapOf()
-    open var strtype: String = strtype
+    open val strtype: String = strtype
     open var constants: MutableMap<String, wolValue> = mutableMapOf()
 }
