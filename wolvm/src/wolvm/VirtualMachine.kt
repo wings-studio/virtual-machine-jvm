@@ -52,13 +52,13 @@ fun main(args: Array<String>)
                     throwVMException("File by full name ${args[0]} not found", 0, ExceptionType.FileNotFoundException)
                 }
                 val input: String = reader.readText()
-                Run(input)
+                Run(input, args.copyOfRange(1, args.lastIndex))
             }
         }
     }
 }
 
-fun Run(code: String)
+fun Run(code: String, wolArgs: Array<String>)
 {
     //create context of thread
     mainstack.classes.put("void", wolVoid())
