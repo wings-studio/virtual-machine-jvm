@@ -34,10 +34,15 @@ fun main(args: Array<String>)
                 {
                     throwVMException("File by name ${args[1]} not found", 0, ExceptionType.FileNotFoundException)
                 }
-                var reader = ByteArrayInputStream(bytes)
+                var code: String = ""
+                for (bit: Byte in bytes)
+                {
+                    code.plus(bit.toChar())
+                }
+                Run(code, args.copyOfRange(2, args.lastIndex))
             }
             "-help" -> {
-                println("World of Legends Virtual Machine Helper")
+                println("World of Legends Virtual Machine $version Helper")
                 println()
                 println("Arguments:")
                 println("-info ; print info about virtual machine")
