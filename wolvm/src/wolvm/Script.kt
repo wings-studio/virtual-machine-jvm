@@ -1,3 +1,4 @@
+@file:JvmName("Script")
 package wolvm
 
 fun parse(code: String)

@@ -1,3 +1,4 @@
+@file:JvmName("VirtualMachine")
 package wolvm
 
 import classes.*
