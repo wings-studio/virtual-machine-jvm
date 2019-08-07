@@ -46,6 +46,7 @@ fun main(args: Array<String>)
                 println("World of Legends Virtual Machine $version Helper")
                 println()
                 println("Arguments:")
+                println("-help ; call World of Legends Virtual Machine $version Helper")
                 println("-info ; print info about virtual machine")
                 println("-encode <full file name> ; encode and run build-file")
                 println("<full file name> ; run build-file")
@@ -66,7 +67,7 @@ fun main(args: Array<String>)
 
 fun Run(code: String, wolArgs: Array<String>)
 {
-    //create context of thread
+    //create base classes
     mainstack.classes.put("void", wolVoid())
     mainstack.classes.put("bool", wolBool())
     mainstack.classes.put("byte", wolByte())
