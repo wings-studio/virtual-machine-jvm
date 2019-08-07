@@ -2,6 +2,7 @@
 package wolvm
 
 import classes.*
+import expr.*
 import utils.*
 import java.io.*
 import java.lang.*
@@ -67,6 +68,10 @@ fun main(args: Array<String>)
 
 fun Run(code: String, wolArgs: Array<String>)
 {
+    //add base expressions
+    expressions.put("typeof", TypeofExpression())
+    expressions.put("destroy", DestroyExpression())
+    
     //create base classes
     mainstack.classes.put("void", wolVoid())
     mainstack.classes.put("bool", wolBool())
