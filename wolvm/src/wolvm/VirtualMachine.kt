@@ -36,7 +36,7 @@ fun main(args: Array<String>)
                 {
                     throwVMException("File by name ${args[1]} not found", 0, ExceptionType.FileNotFoundException)
                 }
-                var code: String = ""
+                var code = ""
                 for (bit: Byte in bytes)
                 {
                     code.plus(bit.toChar())
@@ -72,6 +72,7 @@ fun Run(code: String, wolArgs: Array<String>)
     expressions.put("typeof", TypeofExpression())
     expressions.put("destroy", DestroyExpression())
     expressions.put("set", SetExpression())
+    expressions.put("plus", PlusExpression())
     
     //create base classes
     mainstack.classes.put("void", wolVoid())
@@ -84,7 +85,7 @@ fun Run(code: String, wolArgs: Array<String>)
     mainstack.classes.put("double", wolDouble())
 
     //main cycle
-    var position: Int = 0
+    var position = 0
     var current: Char = code[position]
     while (position < code.length)
     {
@@ -99,7 +100,7 @@ fun Run(code: String, wolArgs: Array<String>)
                 break
             }
         }
-        var buffer: StringBuilder = StringBuilder()
+        var buffer = StringBuilder()
         while (!current.isWhitespace()) //get word
         {
             try {
