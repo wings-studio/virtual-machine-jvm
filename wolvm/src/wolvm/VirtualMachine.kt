@@ -71,6 +71,7 @@ fun Run(code: String, wolArgs: Array<String>)
     //add base expressions
     expressions.put("typeof", TypeofExpression())
     expressions.put("destroy", DestroyExpression())
+    expressions.put("set", SetExpression())
     
     //create base classes
     mainstack.classes.put("void", wolVoid())

@@ -64,11 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/VirtualMachine.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state>
+              <caret column="31" selection-start-column="31" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/Script.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -132,7 +141,6 @@
         <option value="$PROJECT_DIR$/wolvm/src/wolClass.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/utils/VMExpression.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/wolvm/ExceptionType.kt" />
-        <option value="$PROJECT_DIR$/wolvm/src/wolvm/Script.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/utils/VMLibrary.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/expr/TypeofExpression.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/classes/wolVoid.kt" />
@@ -150,6 +158,7 @@
         <option value="$PROJECT_DIR$/wolvm/src/classes/wolDouble.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/classes/wolBool.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/wolvm/VirtualMachine.kt" />
+        <option value="$PROJECT_DIR$/wolvm/src/wolvm/Script.kt" />
       </list>
     </option>
   </component>
@@ -222,7 +231,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -308,7 +317,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -354,13 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/Script.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -529,8 +531,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/VirtualMachine.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/Script.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
