@@ -73,6 +73,7 @@ fun Run(code: String, wolArgs: Array<String>)
     expressions.put("destroy", DestroyExpression())
     expressions.put("set", SetExpression())
     expressions.put("plus", PlusExpression())
+    expressions.put("_loads", LoadsExpression())
     
     //create base classes
     mainstack.classes.put("void", wolVoid())
