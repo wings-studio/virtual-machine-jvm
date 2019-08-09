@@ -84,6 +84,7 @@ fun Run(code: String, wolArgs: Array<String>)
     mainstack.classes.put("float", wolFloat())
     mainstack.classes.put("long", wolLong())
     mainstack.classes.put("double", wolDouble())
+    mainstack.classes.put("Collection", wolCollection())
 
     //main cycle
     var position = 0
