@@ -86,6 +86,7 @@ fun Run(code: String, wolArgs: Array<String>)
     mainstack.classes.put("double", wolDouble())
     mainstack.classes.put("Collection", wolCollection())
     mainstack.classes.put("Array", wolArray())
+    mainstack.classes.put("Link", wolLink())
 
     //main cycle
     var position = 0
@@ -103,7 +104,7 @@ fun Run(code: String, wolArgs: Array<String>)
                 break
             }
         }
-        var buffer = StringBuilder()
+        val buffer = StringBuilder()
         while (!current.isWhitespace()) //get word
         {
             try {
