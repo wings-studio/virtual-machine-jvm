@@ -2,6 +2,8 @@ package classes
 
 import wolvm.*
 
-open class wolCollection: wolClass("Collection") {
+open class wolCollection: wolVoid() {
+    override val strtype: String
+        get() = "Collection"
     lateinit var generic_type: wolClass
 }
