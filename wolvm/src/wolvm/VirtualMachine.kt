@@ -72,7 +72,6 @@ fun Run(code: String, wolArgs: Array<String>)
 {
     //add base expressions
     expressions.put("typeof", TypeofExpression())
-    expressions.put("destroy", DestroyExpression())
     expressions.put("set", SetExpression())
     expressions.put("plus", PlusExpression())
     expressions.put("_loads", LoadsExpression())

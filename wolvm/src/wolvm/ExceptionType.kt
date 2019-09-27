@@ -2,5 +2,6 @@ package wolvm
 
 enum class ExceptionType {
     BLDSyntaxException,
-    FileNotFoundException
+    FileNotFoundException,
+    InvalidTypeException
 }

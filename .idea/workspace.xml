@@ -37,11 +37,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wolvm/src/classes/wolLink.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/ExceptionType.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -78,15 +87,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wolvm/src/classes/wolByte.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -140,7 +140,6 @@
         <option value="$PROJECT_DIR$/wolvm/src/VirtualMachine.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/wolClass.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/utils/VMExpression.kt" />
-        <option value="$PROJECT_DIR$/wolvm/src/wolvm/ExceptionType.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/utils/VMLibrary.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/expr/TypeofExpression.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/classes/wolVoid.kt" />
@@ -165,6 +164,7 @@
         <option value="$PROJECT_DIR$/wolvm/src/classes/wolLink.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/wolvm/VirtualMachine.kt" />
         <option value="$PROJECT_DIR$/wolvm/src/wolvm/wolValue.kt" />
+        <option value="$PROJECT_DIR$/wolvm/src/wolvm/ExceptionType.kt" />
       </list>
     </option>
   </component>
@@ -364,13 +364,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wolvm/wolvm.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/ExceptionType.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wolvm/src/utils/VMExpression.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -594,6 +587,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wolvm/src/wolvm/ExceptionType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
