@@ -7,11 +7,13 @@ import utils.*
 import java.io.*
 import java.lang.*
 
-const val version: String = "0.9.0.0"
+const val version: String = "0.8.0.0"
 var mainstack: Stack = Stack()
 var expressions: MutableMap<String, VMExpression> = mutableMapOf()
 
 fun throwVMException(message: String, position: Int, type: ExceptionType) = println("$type. In position $position. $message")
+
+fun getWolClass(name: String): wolClass? = mainstack.classes[name]
 
 fun main(args: Array<String>)
 {

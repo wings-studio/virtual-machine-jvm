@@ -5,6 +5,6 @@ import wolvm.*
 class wolLink : wolVoid() {
     override val strtype: String
         get() = "Link"
-    lateinit var address: String
-    lateinit var LinkedValue: wolValue
+    var address: String = "null"
+    var LinkedValue: wolValue = wolValue.VoidValue
 }
